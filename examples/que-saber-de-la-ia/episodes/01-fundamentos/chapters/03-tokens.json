@@ -1,0 +1,189 @@
+{
+  "id": "03-tokens",
+  "title": "Los tokens",
+  "chip": "03 · TOKENS",
+  "scenes": [
+    {
+      "vo": "Idea número tres. Los tokens.",
+      "type": "chapter",
+      "n": "03",
+      "title": "Los tokens",
+      "icon": "blocks",
+      "bg": "yellow"
+    },
+    {
+      "vo": "Haz un experimento: pregúntale a una IA cuántas erres tiene la palabra ferrocarril.",
+      "type": "question",
+      "text": "¿Cuántas R tiene «ferrocarril»?",
+      "em": [
+        "R",
+        "«ferrocarril»?"
+      ],
+      "bg": "paper"
+    },
+    {
+      "vo": "Durante mucho tiempo, muchos modelos fallaban. Escribían ensayos enteros… pero no podían contar letras.",
+      "type": "nodo",
+      "mood": "proud",
+      "says": "¡Tiene 2!",
+      "wrong": "Son 4",
+      "cueWrong": "fallaban",
+      "bg": "red",
+      "tr": "cut"
+    },
+    {
+      "vo": "¿Por qué? Porque la IA no lee letras. Lee tokens.",
+      "type": "say",
+      "text": "No lee letras. Lee tokens.",
+      "em": [
+        "tokens."
+      ],
+      "bg": "ink",
+      "tr": "zoom"
+    },
+    {
+      "vo": "Un token es un pedacito de texto. Piénsalo como piezas de lego.",
+      "type": "tokens",
+      "mode": "split",
+      "word": "ferrocarril",
+      "pieces": [
+        "ferro",
+        "carr",
+        "il"
+      ],
+      "cue": "pedacito",
+      "note": "Piezas de lego",
+      "cueNote": "lego",
+      "bg": "paper"
+    },
+    {
+      "vo": "Las palabras comunes, como casa u hola, suelen ser una sola pieza.",
+      "type": "tokens",
+      "mode": "pieces",
+      "groups": [
+        {
+          "word": "casa",
+          "pieces": [
+            "casa"
+          ],
+          "cue": "casa"
+        },
+        {
+          "word": "hola",
+          "pieces": [
+            "hola"
+          ],
+          "cue": "hola"
+        }
+      ],
+      "note": "1 palabra = 1 pieza",
+      "cueNote": "sola",
+      "bg": "blue"
+    },
+    {
+      "vo": "Las palabras largas o raras se arman con varias piezas pequeñas.",
+      "type": "tokens",
+      "mode": "pieces",
+      "groups": [
+        {
+          "word": "desafortunadamente",
+          "pieces": [
+            "des",
+            "afort",
+            "unada",
+            "mente"
+          ],
+          "cue": "largas"
+        }
+      ],
+      "note": "División ilustrativa",
+      "cueNote": "varias",
+      "bg": "paper",
+      "tr": "rise"
+    },
+    {
+      "vo": "Tú ves ferrocarril letra por letra. La IA ve unas cuantas piezas pegadas. Para contar las erres, tendría que mirar dentro de cada pieza.",
+      "type": "tokens",
+      "mode": "compare",
+      "word": "ferrocarril",
+      "pieces": [
+        "ferro",
+        "carr",
+        "il"
+      ],
+      "cueLetters": "letra",
+      "cuePieces": "piezas",
+      "cueLook": "mirar",
+      "bg": "paper"
+    },
+    {
+      "vo": "Una regla aproximada: en inglés, un token es como tres cuartas partes de una palabra. En español solemos gastar un poquito más.",
+      "type": "bignum",
+      "text": "¾",
+      "label": "de palabra por token (en inglés)",
+      "sub": "En español, un poquito más",
+      "cue": "tres",
+      "cueSub": "español",
+      "bg": "yellow",
+      "tr": "iris"
+    },
+    {
+      "vo": "¿Y a ti por qué te importa? Por dos razones.",
+      "type": "say",
+      "text": "¿Y a ti qué?",
+      "em": [
+        "ti"
+      ],
+      "kicker": "Dos razones",
+      "mascot": "think",
+      "bg": "paper"
+    },
+    {
+      "vo": "Uno: los límites. Cuando una app te dice que tu documento es demasiado largo, está contando tokens.",
+      "type": "meter",
+      "title": "Límite de la app",
+      "items": [
+        {
+          "label": "Tu documento",
+          "value": 1.12,
+          "tone": "red",
+          "cue": "documento"
+        }
+      ],
+      "limit": "LÍMITE",
+      "alert": "Demasiado largo",
+      "cueAlert": "largo",
+      "bg": "ink",
+      "tr": "whip"
+    },
+    {
+      "vo": "Dos: el costo. Las empresas pagan por cada token que entra y que sale. Cinco párrafos cuestan más que cinco líneas.",
+      "type": "meter",
+      "title": "Costo en tokens",
+      "items": [
+        {
+          "label": "5 líneas",
+          "value": 0.22,
+          "tone": "green",
+          "cue": "token"
+        },
+        {
+          "label": "5 párrafos",
+          "value": 0.86,
+          "tone": "red",
+          "cue": "párrafos"
+        }
+      ],
+      "unit": "coin",
+      "bg": "paper"
+    },
+    {
+      "vo": "Quédate con esto: la IA no ve letras ni palabras. Ve tokens. Y casi todo se mide con ellos.",
+      "type": "takeaway",
+      "text": "La IA no ve letras ni palabras. Ve tokens.",
+      "em": [
+        "tokens."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "06-alucinaciones",
+  "title": "Las alucinaciones",
+  "chip": "06 · ALUCINACIONES",
+  "scenes": [
+    {
+      "vo": "Idea número seis. Las alucinaciones.",
+      "type": "chapter",
+      "n": "06",
+      "title": "Las alucinaciones",
+      "icon": "ghost",
+      "bg": "ink"
+    },
+    {
+      "vo": "Seguro tienes un tío así. Le preguntas lo que sea y siempre tiene una respuesta. Con total seguridad.",
+      "type": "persona",
+      "who": "uncle",
+      "says": "¡Obvio! Fue en 1953.",
+      "cueSays": "respuesta",
+      "tags": [
+        { "text": "Total seguridad", "icon": "star", "cue": "seguridad" }
+      ],
+      "bg": "yellow"
+    },
+    {
+      "vo": "A veces tiene razón… y a veces se lo está inventando todo, con la misma cara.",
+      "type": "versus",
+      "left": { "title": "Acierta", "text": "Misma cara", "icon": "check", "tone": "green", "cue": "razón" },
+      "right": { "title": "Inventa", "text": "Misma cara", "icon": "cross", "tone": "red", "cue": "inventando" },
+      "faces": "uncle",
+      "bg": "paper",
+      "tr": "cut"
+    },
+    {
+      "vo": "La IA a veces es ese tío. Y a eso le llamamos alucinación.",
+      "type": "say",
+      "text": "Alucinación",
+      "em": ["Alucinación"],
+      "kicker": "La IA a veces es ese tío",
+      "size": "xl",
+      "mascot": "smug",
+      "bg": "ink",
+      "tr": "zoom"
+    },
+    {
+      "vo": "Es información falsa, presentada como si fuera cierta. Un dato que no existe, una cita que nadie dijo, un libro que nunca se escribió.",
+      "type": "stamp",
+      "title": "Respuesta de la IA",
+      "lines": ["Dato: 73 % de los gatos…", "Cita: «…» — Einstein", "Libro: El arte del todo (2011)"],
+      "cueLines": ["dato", "cita", "libro"],
+      "stamp": "FALSO",
+      "tone": "red",
+      "icon": "ghost",
+      "cue": "nunca",
+      "bg": "paper"
+    },
+    {
+      "vo": "Lo peligroso no es que se equivoque. Es que suena igual de segura cuando acierta… que cuando inventa.",
+      "type": "say",
+      "text": "Suena igual de segura cuando acierta que cuando inventa",
+      "em": ["igual de segura"],
+      "bg": "red",
+      "tr": "whip"
+    },
+    {
+      "vo": "¿Por qué pasa? Acuérdate: la IA escoge el siguiente pedacito entre opciones probables. Probables. No verdaderas.",
+      "type": "predict",
+      "prefix": "El control remoto lo inventó",
+      "candidates": [
+        { "w": "Robert", "p": 0.31 },
+        { "w": "Eugene", "p": 0.27 },
+        { "w": "Thomas", "p": 0.19 },
+        { "w": "un tal…", "p": 0.08 }
+      ],
+      "pick": 0,
+      "cue": "probables",
+      "stamp": "Probable ≠ verdadero",
+      "cueStamp": "verdaderas",
+      "bg": "paper"
+    },
+    {
+      "vo": "Sonar correcto y ser correcto son cosas distintas.",
+      "type": "versus",
+      "left": { "title": "Sonar correcto", "text": "Lo que la IA hace muy bien", "icon": "mic", "tone": "yellow", "cue": "sonar" },
+      "right": { "title": "Ser correcto", "text": "Lo que debes revisar tú", "icon": "check", "tone": "green", "cue": "ser" },
+      "bg": "blue",
+      "tr": "iris"
+    },
+    {
+      "vo": "Ejemplo real: le pides cinco libros sobre liderazgo, con autor y año. Te da una lista preciosa. Tres existen. Dos… no.",
+      "type": "verify",
+      "title": "5 libros sobre liderazgo",
+      "items": [
+        { "text": "Libro 1 · Autor · 2015", "ok": true },
+        { "text": "Libro 2 · Autor · 2009", "ok": true },
+        { "text": "Libro 3 · Autor · 2018", "ok": false },
+        { "text": "Libro 4 · Autor · 2012", "ok": true },
+        { "text": "Libro 5 · Autor · 2020", "ok": false }
+      ],
+      "cueList": "lista",
+      "cueOk": "tres",
+      "cueBad": "dos",
+      "bg": "paper"
+    },
+    {
+      "vo": "Tus defensas. Uno: dale la fuente, pega el documento. Dos: dale permiso de no saber: si no estás seguro, dímelo. Tres: verifica lo que importa: nombres, cifras y fechas.",
+      "type": "steps",
+      "title": "Tus defensas",
+      "items": [
+        { "text": "Dale la fuente", "icon": "doc", "cue": "fuente" },
+        { "text": "Permiso de no saber", "icon": "question", "cue": "permiso" },
+        { "text": "Verifica lo que importa", "icon": "search", "cue": "verifica" }
+      ],
+      "bg": "green",
+      "tr": "rise"
+    },
+    {
+      "vo": "Quédate con esto: la IA está hecha para sonar convincente, no para decir siempre la verdad.",
+      "type": "takeaway",
+      "text": "Hecha para sonar convincente, no para decir siempre la verdad.",
+      "em": ["siempre la verdad."]
+    }
+  ]
+}

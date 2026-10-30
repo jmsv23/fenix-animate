@@ -1,0 +1,120 @@
+{
+  "id": "07-modelo",
+  "title": "El modelo",
+  "chip": "07 · MODELO",
+  "scenes": [
+    {
+      "vo": "Idea número siete. ¿Qué es un modelo?",
+      "type": "chapter",
+      "n": "07",
+      "title": "¿Qué es un modelo?",
+      "icon": "file",
+      "bg": "blue"
+    },
+    {
+      "vo": "Cuando hablas con la IA… ¿con qué hablas exactamente? ¿Con un robot? ¿Con un cerebro en un frasco? ¿Con alguien escribiendo rapidísimo?",
+      "type": "verify",
+      "title": "¿Con qué hablas?",
+      "items": [
+        { "text": "¿Un robot?", "icon": "robot", "ok": false, "cue": "robot" },
+        { "text": "¿Un cerebro en un frasco?", "icon": "brain", "ok": false, "cue": "cerebro" },
+        { "text": "¿Alguien escribiendo?", "icon": "user", "ok": false, "cue": "alguien" }
+      ],
+      "cueBad": "rapidísimo",
+      "bg": "paper"
+    },
+    {
+      "vo": "La respuesta corta: hablaste con un modelo.",
+      "type": "say",
+      "text": "Hablaste con un modelo",
+      "em": ["un modelo"],
+      "icon": "file",
+      "bg": "ink",
+      "tr": "zoom"
+    },
+    {
+      "vo": "Piensa en el señor de la fruta. Le das un aguacate, lo aprieta un segundo y te dice: este, para mañana.",
+      "type": "persona",
+      "who": "vendor",
+      "says": "Este, para mañana",
+      "cueSays": "dice",
+      "tags": [
+        { "text": "Lo aprieta", "icon": "avocado", "cue": "aprieta" }
+      ],
+      "bg": "green"
+    },
+    {
+      "vo": "Nadie le dio un manual. Vio miles y miles de aguacates, y su cabeza fue guardando patrones.",
+      "type": "pile",
+      "icon": "avocado",
+      "count": 24,
+      "label": "Miles de ejemplos → patrones",
+      "cue": "miles",
+      "bg": "yellow",
+      "tr": "rise"
+    },
+    {
+      "vo": "Un modelo es eso mismo: patrones aprendidos de muchísimos ejemplos, convertidos en números y guardados en un archivo.",
+      "type": "network",
+      "label": "Patrones → números → archivo",
+      "cue": "patrones",
+      "cueNumbers": "números",
+      "cueFile": "archivo",
+      "bg": "ink",
+      "tr": "iris"
+    },
+    {
+      "vo": "Entra algo, el modelo hace cálculos, y sale algo. Entra una foto, sale gato. Entra tu pregunta, sale una respuesta.",
+      "type": "inout",
+      "box": "Modelo",
+      "pairs": [
+        { "in": "Foto", "inIcon": "image", "out": "«gato»", "outIcon": "cat", "cue": "foto" },
+        { "in": "Tu pregunta", "inIcon": "chat", "out": "Respuesta", "outIcon": "doc", "cue": "pregunta" }
+      ],
+      "bg": "paper"
+    },
+    {
+      "vo": "Y aquí lo importante: el señor tiene vida y opiniones. El modelo, no. Cuando cierras la app, no se queda pensando en ti.",
+      "type": "nodo",
+      "mood": "sleep",
+      "says": "Soy un archivo quieto",
+      "cueSays": "cierras",
+      "bg": "blue",
+      "tr": "cut"
+    },
+    {
+      "vo": "La app que ves es la fachada. El modelo es el motor.",
+      "type": "versus",
+      "left": { "title": "La app", "text": "La fachada", "icon": "phone", "tone": "yellow", "cue": "fachada" },
+      "right": { "title": "El modelo", "text": "El motor", "icon": "gear", "tone": "blue", "cue": "motor" },
+      "bg": "paper"
+    },
+    {
+      "vo": "Y hay modelos por todos lados: el que filtra tu correo basura, el que te recomienda la siguiente serie. Llevas años usándolos.",
+      "type": "grid",
+      "title": "Modelos por todos lados",
+      "items": [
+        { "text": "Correo basura", "icon": "mail", "cue": "correo" },
+        { "text": "Tu siguiente serie", "icon": "tv", "cue": "serie" },
+        { "text": "Tus fotos", "icon": "image", "cue": "años" },
+        { "text": "Tus mapas", "icon": "pin", "cue": "usándolos" }
+      ],
+      "bg": "green",
+      "tr": "whip"
+    },
+    {
+      "vo": "Así que la próxima vez que leas: la IA decidió… tradúcelo: un modelo calculó.",
+      "type": "myth",
+      "wrong": "La IA decidió",
+      "right": "Un modelo calculó",
+      "cue": "tradúcelo",
+      "bg": "paper"
+    },
+    {
+      "vo": "Quédate con esto: un modelo es un montón de números que convierte lo que entra en lo que sale.",
+      "type": "takeaway",
+      "text": "Un modelo: números que convierten lo que entra en lo que sale.",
+      "em": ["números"]
+    }
+  ]
+}

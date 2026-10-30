@@ -1,0 +1,6 @@
+{
+  "id": "01-ejemplo",
+  "title": "Episodio de ejemplo",
+  "chapters": ["00-intro"],
+  "gapSeconds": 0.35
+}

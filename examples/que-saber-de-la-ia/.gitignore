@@ -1,0 +1,7 @@
+.hyperframes/
+.fw/
+.thumbnails/
+.waveform-cache/
+.transcode-cache/
+renders/
+*.mp4

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "2.0",
+  "projectId": "que-saber-de-la-ia",
+  "series": "Qué saber de la IA",
+  "language": "es",
+  "canvas": { "width": 1920, "height": 1080, "fps": 30 },
+  "style": "flat-explainer",
+  "activeEpisode": "episodes/01-fundamentos",
+  "hyperframes": "0.8.221",
+  "voice": {
+    "provider": "voicebox",
+    "url": "http://127.0.0.1:17493",
+    "profile": "mi voz 1",
+    "instruct": "Tono cercano, enérgico y curioso, como un amigo que te cuenta algo fascinante. Ritmo ágil, con pausas cortas antes de las ideas clave.",
+    "normalize": true,
+    "maxChunkChars": 800,
+    "crossfadeMs": 50
+  },
+  "align": { "provider": "whisperx", "model": "small" }
+}

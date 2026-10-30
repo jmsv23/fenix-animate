@@ -1,0 +1,13 @@
+# Tus videos viven en videos/ y no se suben con el framework.
+# Si quieres versionarlos aquí, borra estas dos líneas.
+videos/*
+!videos/README.md
+
+node_modules/
+.DS_Store
+examples/*/assets/
+examples/*/compositions/
+examples/*/index.html
+examples/*/renders/
+examples/*/.fw/
+examples/*/.hyperframes/

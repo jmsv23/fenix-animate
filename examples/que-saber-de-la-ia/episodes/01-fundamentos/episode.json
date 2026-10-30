@@ -1,0 +1,6 @@
+{
+  "id": "01-fundamentos",
+  "title": "La IA explicada sin tecnicismos: 7 ideas que lo cambian todo",
+  "chapters": ["00-hook", "01-prompt", "02-contexto", "03-tokens", "04-ventana", "05-temperatura", "06-alucinaciones", "07-modelo", "08-cierre"],
+  "gapSeconds": 0.35
+}

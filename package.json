@@ -1,0 +1,14 @@
+{
+  "name": "video-generation-framework",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Videos explicativos animados con voz, guiados por un agente de IA y renderizados con HyperFrames.",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "new": "node src/cli.mjs new",
+    "doctor": "node src/cli.mjs doctor",
+    "catalog": "node src/cli.mjs catalog",
+    "fw": "node src/cli.mjs"
+  }
+}

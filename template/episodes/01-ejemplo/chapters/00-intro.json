@@ -1,0 +1,34 @@
+{
+  "id": "00-intro",
+  "title": "Intro",
+  "chip": null,
+  "scenes": [
+    {
+      "vo": "¿Alguna vez te explicaron algo y saliste más confundido que antes?",
+      "type": "question",
+      "text": "¿Más confundido que antes?",
+      "em": ["confundido"],
+      "bg": "paper"
+    },
+    {
+      "vo": "Hoy lo vamos a entender en tres ideas sencillas.",
+      "type": "grid",
+      "title": "3 ideas",
+      "items": [
+        { "text": "Uno", "icon": "bulb", "cue": "tres" },
+        { "text": "Dos", "icon": "star", "cue": "ideas" },
+        { "text": "Tres", "icon": "target", "cue": "sencillas" }
+      ],
+      "bg": "yellow",
+      "tr": "zoom"
+    },
+    {
+      "vo": "Empezamos.",
+      "type": "say",
+      "text": "¡Empezamos!",
+      "em": ["¡Empezamos!"],
+      "bg": "red",
+      "tr": "flood"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "id": "00-hook",
+  "title": "Hook",
+  "chip": null,
+  "scenes": [
+    {
+      "vo": "¿Alguna vez le pediste algo a la inteligencia artificial… y te respondió pura basura?",
+      "type": "chat",
+      "user": "Hazme un reporte",
+      "ai": "¡Claro! Un reporte es un documento que reporta información relevante de manera reportada…",
+      "verdict": "meh",
+      "cueAi": "respondió",
+      "bg": "paper"
+    },
+    {
+      "vo": "Tranquilo. No es que la IA sea tonta.",
+      "type": "nodo",
+      "mood": "hurt",
+      "says": "¿Tonta? ¿Yo?",
+      "bg": "blue",
+      "tr": "zoom"
+    },
+    {
+      "vo": "Y tampoco es que tú lo estés haciendo mal.",
+      "type": "say",
+      "text": "Tampoco es tu culpa",
+      "em": ["tu culpa"],
+      "bg": "paper"
+    },
+    {
+      "vo": "Es que nadie te explicó cómo funciona por dentro.",
+      "type": "say",
+      "text": "Nadie te explicó cómo funciona por dentro",
+      "em": ["por dentro"],
+      "bg": "ink",
+      "tr": "iris"
+    },
+    {
+      "vo": "En los próximos minutos vas a entender siete ideas que lo cambian todo. El prompt. El contexto. Los tokens. La ventana de contexto. La temperatura. Las alucinaciones. Y qué es, de verdad, un modelo.",
+      "type": "grid",
+      "title": "7 ideas",
+      "items": [
+        { "text": "Prompt", "icon": "chat", "cue": "prompt" },
+        { "text": "Contexto", "icon": "doc", "cue": "contexto" },
+        { "text": "Tokens", "icon": "blocks", "cue": "tokens" },
+        { "text": "Ventana", "icon": "window", "cue": "ventana" },
+        { "text": "Temperatura", "icon": "thermo", "cue": "temperatura" },
+        { "text": "Alucinaciones", "icon": "ghost", "cue": "alucinaciones" },
+        { "text": "Modelo", "icon": "file", "cue": "modelo" }
+      ],
+      "bg": "paper"
+    },
+    {
+      "vo": "Sin fórmulas. Sin tecnicismos. Y al final, le vas a sacar mucho más provecho.",
+      "type": "say",
+      "text": "Sin fórmulas. Sin tecnicismos.",
+      "em": ["fórmulas", "tecnicismos"],
+      "kicker": "La promesa",
+      "mascot": "happy",
+      "bg": "yellow"
+    },
+    {
+      "vo": "Empezamos.",
+      "type": "say",
+      "text": "¡Empezamos!",
+      "em": ["Empezamos!"],
+      "size": "xl",
+      "bg": "red",
+      "tr": "flood"
+    }
+  ]
+}

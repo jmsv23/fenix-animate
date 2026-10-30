@@ -1,0 +1,49 @@
+{
+  "id": "08-cierre",
+  "title": "Cierre",
+  "chip": "REPASO",
+  "scenes": [
+    {
+      "vo": "Repasemos rapidísimo. El prompt: tu pedido. El contexto: con qué trabaja. Los tokens: cómo lee. La ventana: cuánto le cabe. La temperatura: qué tan arriesgada es. Las alucinaciones: por qué inventa. Y el modelo: lo que hay detrás.",
+      "type": "grid",
+      "title": "Repaso",
+      "items": [
+        { "text": "Prompt", "sub": "tu pedido", "icon": "chat", "cue": "prompt" },
+        { "text": "Contexto", "sub": "con qué trabaja", "icon": "doc", "cue": "contexto" },
+        { "text": "Tokens", "sub": "cómo lee", "icon": "blocks", "cue": "tokens" },
+        { "text": "Ventana", "sub": "cuánto le cabe", "icon": "window", "cue": "ventana" },
+        { "text": "Temperatura", "sub": "qué tan arriesgada", "icon": "thermo", "cue": "temperatura" },
+        { "text": "Alucinaciones", "sub": "por qué inventa", "icon": "ghost", "cue": "alucinaciones" },
+        { "text": "Modelo", "sub": "lo que hay detrás", "icon": "file", "cue": "modelo" }
+      ],
+      "bg": "paper"
+    },
+    {
+      "vo": "Con esto ya no eres un usuario cualquiera.",
+      "type": "nodo",
+      "mood": "happy",
+      "says": "¡Ya me entiendes!",
+      "bg": "yellow",
+      "tr": "zoom"
+    },
+    {
+      "vo": "En el siguiente video abrimos la caja más famosa de todas: cómo funciona por dentro un chat como ChatGPT.",
+      "type": "say",
+      "text": "Cómo funciona por dentro un chat",
+      "em": ["por dentro"],
+      "kicker": "Próximo video",
+      "icon": "box",
+      "bg": "ink",
+      "tr": "iris"
+    },
+    {
+      "vo": "Si este video te sirvió, suscríbete, y compártelo con alguien que todavía le tiene miedo a la IA.",
+      "type": "cta",
+      "text": "Suscríbete",
+      "sub": "y compártelo con alguien que todavía le tiene miedo a la IA",
+      "cue": "suscríbete",
+      "cueSub": "compártelo",
+      "bg": "red"
+    }
+  ]
+}

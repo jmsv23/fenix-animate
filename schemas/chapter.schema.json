@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "episodes/<ep>/chapters/<id>.json",
+  "type": "object",
+  "required": ["id", "scenes"],
+  "properties": {
+    "id": { "type": "string", "description": "igual al nombre del archivo" },
+    "title": { "type": "string" },
+    "chip": { "type": ["string", "null"], "description": "etiqueta fija del capítulo (arriba a la izquierda)" },
+    "voice": { "type": "object", "properties": { "instruct": { "type": "string" } } },
+    "scenes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["vo", "type"],
+        "properties": {
+          "vo": { "type": "string", "description": "narración de la escena; va al TTS tal cual" },
+          "type": { "type": "string", "description": "tipo de escena (fw catalog)" },
+          "bg": { "enum": ["paper", "ink", "red", "blue", "yellow", "green"] },
+          "tr": { "enum": ["whip", "cut", "zoom", "iris", "rise", "flood"] },
+          "em": { "type": "array", "items": { "type": "string" }, "description": "palabras marcadas del texto en pantalla" }
+        },
+        "additionalProperties": true,
+        "$comment": "Cada tipo añade sus parámetros (fw catalog). Toda clave cue* es una palabra de vo."
+      }
+    }
+  }
+}

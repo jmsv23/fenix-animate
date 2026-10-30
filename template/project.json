@@ -1,0 +1,20 @@
+{
+  "schemaVersion": "2.0",
+  "projectId": "mi-serie",
+  "series": "Mi serie",
+  "language": "es",
+  "canvas": { "width": 1920, "height": 1080, "fps": 30 },
+  "style": "flat-explainer",
+  "activeEpisode": "episodes/01-ejemplo",
+  "hyperframes": "0.8.221",
+  "voice": {
+    "provider": "voicebox",
+    "url": "http://127.0.0.1:17493",
+    "profile": "nombre-de-tu-perfil",
+    "instruct": "Tono cercano, enérgico y curioso, como un amigo que te cuenta algo fascinante. Ritmo ágil.",
+    "normalize": true,
+    "maxChunkChars": 800,
+    "crossfadeMs": 50
+  },
+  "align": { "provider": "whisperx", "model": "small" }
+}

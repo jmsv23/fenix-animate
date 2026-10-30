@@ -1,0 +1,11 @@
+{
+  "name": "mi-serie",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fw": "node {{FW}}/src/cli.mjs",
+    "dev": "npx --yes hyperframes@0.8.221 preview",
+    "check": "npx --yes hyperframes@0.8.221 check",
+    "render": "node {{FW}}/src/cli.mjs render"
+  }
+}

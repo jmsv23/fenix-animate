@@ -1,0 +1,224 @@
+{
+  "id": "05-temperatura",
+  "title": "La temperatura",
+  "chip": "05 · TEMPERATURA",
+  "scenes": [
+    {
+      "vo": "Idea número cinco. La temperatura.",
+      "type": "chapter",
+      "n": "05",
+      "title": "La temperatura",
+      "icon": "thermo",
+      "bg": "red"
+    },
+    {
+      "vo": "Pídele a la IA un eslogan para una panadería. Ahora abre otro chat y pídele exactamente lo mismo.",
+      "type": "versus",
+      "left": {
+        "title": "Chat 1",
+        "text": "«Pan que abraza»",
+        "icon": "bread",
+        "tone": "yellow",
+        "cue": "eslogan"
+      },
+      "right": {
+        "title": "Chat 2",
+        "text": "«El sabor de cada mañana»",
+        "icon": "bread",
+        "tone": "blue",
+        "cue": "otro"
+      },
+      "bg": "paper"
+    },
+    {
+      "vo": "¿Te dio lo mismo? Casi seguro que no. ¿Por qué, si la pregunta fue idéntica?",
+      "type": "question",
+      "text": "Misma pregunta, ¿otra respuesta?",
+      "em": [
+        "¿otra",
+        "respuesta?"
+      ],
+      "bg": "yellow",
+      "tr": "zoom"
+    },
+    {
+      "vo": "Porque la IA escribe pedacito a pedacito. Y en cada paso tiene varios candidatos para el siguiente.",
+      "type": "predict",
+      "prefix": "El pan más",
+      "candidates": [
+        {
+          "w": "rico",
+          "p": 0.52
+        },
+        {
+          "w": "suave",
+          "p": 0.24
+        },
+        {
+          "w": "feliz",
+          "p": 0.11
+        },
+        {
+          "w": "valiente",
+          "p": 0.03
+        }
+      ],
+      "pick": 0,
+      "cue": "pedacito",
+      "note": "Probabilidades ilustrativas",
+      "bg": "paper"
+    },
+    {
+      "vo": "La temperatura es la perilla que decide qué tan arriesgada es al escoger.",
+      "type": "dial",
+      "label": "Temperatura",
+      "from": 0.15,
+      "to": 0.85,
+      "cue": "arriesgada",
+      "bg": "ink",
+      "tr": "iris"
+    },
+    {
+      "vo": "Piensa en dos amigos en tu restaurante de siempre. Él es temperatura baja: pide los tacos de siempre. Diez veces que le preguntes, diez veces lo mismo.",
+      "type": "persona",
+      "who": "friend-m",
+      "badge": {
+        "text": "Temperatura baja",
+        "icon": "snow",
+        "tone": "blue"
+      },
+      "says": "Los tacos de siempre",
+      "cueSays": "tacos",
+      "tags": [
+        {
+          "text": "Predecible",
+          "icon": "check",
+          "cue": "diez"
+        }
+      ],
+      "bg": "blue"
+    },
+    {
+      "vo": "Ella es temperatura alta: hoy el platillo del día, mañana el especial raro que nadie pide. A veces descubre algo buenísimo… y a veces se arrepiente.",
+      "type": "persona",
+      "who": "friend-f",
+      "badge": {
+        "text": "Temperatura alta",
+        "icon": "fire",
+        "tone": "red"
+      },
+      "says": "¡El especial raro!",
+      "cueSays": "especial",
+      "tags": [
+        {
+          "text": "¡Buenísimo!",
+          "icon": "star",
+          "cue": "buenísimo"
+        },
+        {
+          "text": "Se arrepiente",
+          "icon": "cross",
+          "cue": "arrepiente"
+        }
+      ],
+      "bg": "yellow",
+      "tr": "whip"
+    },
+    {
+      "vo": "Con temperatura baja, la IA casi siempre escoge el pedacito más probable. Respuestas consistentes… un poco aburridas.",
+      "type": "predict",
+      "prefix": "El pan más",
+      "candidates": [
+        {
+          "w": "rico",
+          "p": 0.52
+        },
+        {
+          "w": "suave",
+          "p": 0.24
+        },
+        {
+          "w": "feliz",
+          "p": 0.11
+        },
+        {
+          "w": "valiente",
+          "p": 0.03
+        }
+      ],
+      "pick": 0,
+      "temp": "low",
+      "cue": "probable",
+      "bg": "blue",
+      "tr": "cut"
+    },
+    {
+      "vo": "Con temperatura alta se anima con opciones menos obvias: más variedad, más creatividad. Pero si la subes demasiado, empieza a decir cosas sin sentido.",
+      "type": "predict",
+      "prefix": "El pan más",
+      "candidates": [
+        {
+          "w": "rico",
+          "p": 0.52
+        },
+        {
+          "w": "suave",
+          "p": 0.24
+        },
+        {
+          "w": "feliz",
+          "p": 0.11
+        },
+        {
+          "w": "galáctico",
+          "p": 0.02
+        }
+      ],
+      "pick": 2,
+      "pick2": 3,
+      "temp": "high",
+      "cue": "obvias",
+      "cue2": "sentido",
+      "bg": "red"
+    },
+    {
+      "vo": "En el chat normal no hay perilla, pero la mueves con tu prompt. ¿Quieres ideas? Pide diez opciones muy distintas. ¿Quieres precisión? Pide algo breve y exacto.",
+      "type": "versus",
+      "left": {
+        "title": "Ideas",
+        "text": "«Dame 10 opciones muy distintas»",
+        "icon": "bulb",
+        "tone": "red",
+        "cue": "ideas"
+      },
+      "right": {
+        "title": "Precisión",
+        "text": "«Breve y exacto, sin adornos»",
+        "icon": "target",
+        "tone": "blue",
+        "cue": "precisión"
+      },
+      "bg": "paper",
+      "tr": "rise"
+    },
+    {
+      "vo": "Y si una respuesta no te gusta, pide que la regenere. La segunda puede ser justo la que buscabas.",
+      "type": "say",
+      "text": "¿No te gustó? Regenera.",
+      "em": [
+        "Regenera."
+      ],
+      "icon": "refresh",
+      "bg": "green"
+    },
+    {
+      "vo": "Quédate con esto: baja para precisión, alta para creatividad.",
+      "type": "takeaway",
+      "text": "Baja para precisión. Alta para creatividad.",
+      "em": [
+        "precisión.",
+        "creatividad."
+      ]
+    }
+  ]
+}

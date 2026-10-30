@@ -1,0 +1,215 @@
+{
+  "id": "04-ventana",
+  "title": "La ventana de contexto",
+  "chip": "04 · VENTANA DE CONTEXTO",
+  "scenes": [
+    {
+      "vo": "Idea número cuatro. La ventana de contexto.",
+      "type": "chapter",
+      "n": "04",
+      "title": "La ventana de contexto",
+      "icon": "window",
+      "bg": "green"
+    },
+    {
+      "vo": "¿Te ha pasado? Al principio le dices a la IA: respóndeme siempre en tono formal. Y todo va bien.",
+      "type": "chat",
+      "user": "Respóndeme siempre en tono formal",
+      "ai": "Por supuesto. Será un placer atenderle.",
+      "verdict": "good",
+      "cueAi": "bien",
+      "bg": "paper"
+    },
+    {
+      "vo": "Pero después de mucho ir y venir, de repente te contesta como si nada. Como si nunca se lo hubieras dicho.",
+      "type": "window",
+      "mode": "chat",
+      "title": "La conversación",
+      "items": [
+        {
+          "label": "Tono formal, por favor",
+          "tone": "yellow"
+        },
+        {
+          "label": "Mensaje"
+        },
+        {
+          "label": "Respuesta"
+        },
+        {
+          "label": "Mensaje"
+        },
+        {
+          "label": "Respuesta"
+        },
+        {
+          "label": "Mensaje"
+        },
+        {
+          "label": "Respuesta"
+        },
+        {
+          "label": "¡Qué onda! Va, te ayudo",
+          "tone": "red"
+        }
+      ],
+      "capacity": 5,
+      "cueEnd": "nada",
+      "bg": "blue",
+      "tr": "rise"
+    },
+    {
+      "vo": "No se hizo la desentendida. Se le llenó la ventana de contexto.",
+      "type": "say",
+      "text": "Se le llenó la ventana de contexto",
+      "em": [
+        "ventana de contexto"
+      ],
+      "mascot": "dizzy",
+      "bg": "paper"
+    },
+    {
+      "vo": "La ventana de contexto es cuánto puede tener en cuenta la IA al mismo tiempo. Piénsalo como la barra de tu cocina.",
+      "type": "window",
+      "mode": "counter",
+      "title": "La barra de la cocina",
+      "items": [
+        {
+          "label": "Receta",
+          "icon": "doc"
+        },
+        {
+          "label": "Ingredientes",
+          "icon": "carrot"
+        },
+        {
+          "label": "Tabla",
+          "icon": "board"
+        }
+      ],
+      "capacity": 5,
+      "bg": "yellow",
+      "tr": "zoom"
+    },
+    {
+      "vo": "Ahí va todo: tus mensajes, sus respuestas, los documentos que pegas. Todo ocupa espacio.",
+      "type": "window",
+      "mode": "counter",
+      "title": "Todo ocupa espacio",
+      "items": [
+        {
+          "label": "Tus mensajes",
+          "icon": "chat",
+          "cue": "mensajes"
+        },
+        {
+          "label": "Sus respuestas",
+          "icon": "robot",
+          "cue": "respuestas"
+        },
+        {
+          "label": "Documentos",
+          "icon": "doc",
+          "cue": "documentos"
+        },
+        {
+          "label": "Más documentos",
+          "icon": "doc",
+          "cue": "espacio"
+        }
+      ],
+      "capacity": 5,
+      "bg": "paper"
+    },
+    {
+      "vo": "¿Y cuando la barra se llena? Algunas apps tiran lo más viejo, otras lo resumen. Y lo primero en caer es lo del principio.",
+      "type": "window",
+      "mode": "counter",
+      "title": "La barra se llena",
+      "items": [
+        {
+          "label": "Tono formal",
+          "icon": "star",
+          "tone": "yellow"
+        },
+        {
+          "label": "Mensajes",
+          "icon": "chat"
+        },
+        {
+          "label": "Respuestas",
+          "icon": "robot"
+        },
+        {
+          "label": "Documentos",
+          "icon": "doc"
+        },
+        {
+          "label": "Más mensajes",
+          "icon": "chat",
+          "cue": "llena"
+        },
+        {
+          "label": "Otro documento",
+          "icon": "doc",
+          "cue": "tiran"
+        }
+      ],
+      "capacity": 5,
+      "cueEnd": "caer",
+      "bg": "red",
+      "tr": "cut"
+    },
+    {
+      "vo": "Hoy las ventanas son enormes. En muchos modelos caben libros completos.",
+      "type": "pile",
+      "icon": "book",
+      "count": 14,
+      "label": "Caben libros completos",
+      "cue": "enormes",
+      "bg": "blue",
+      "tr": "iris"
+    },
+    {
+      "vo": "Pero una barra muy llena es una barra desordenada. Pegas un contrato largo, tres correos, tus notas… y se le escapa la fecha que estaba a la mitad.",
+      "type": "haystack",
+      "label": "Muy lleno = desordenado",
+      "needle": "Entrega: 15 de marzo",
+      "cueNeedle": "fecha",
+      "bg": "paper"
+    },
+    {
+      "vo": "Tres trucos. Uno: tema nuevo, chat nuevo. Dos: si el chat ya es larguísimo, pide un resumen y empieza otro con él. Tres: si algo es clave, repítelo cerca de tu pedido.",
+      "type": "steps",
+      "title": "3 trucos",
+      "items": [
+        {
+          "text": "Tema nuevo, chat nuevo",
+          "icon": "plus",
+          "cue": "uno"
+        },
+        {
+          "text": "Resume y empieza de nuevo",
+          "icon": "broom",
+          "cue": "dos"
+        },
+        {
+          "text": "Repite lo clave al final",
+          "icon": "pin",
+          "cue": "tres"
+        }
+      ],
+      "bg": "green",
+      "tr": "rise"
+    },
+    {
+      "vo": "Quédate con esto: la IA tiene un espacio de trabajo limitado. Mantenlo limpio y enfocado.",
+      "type": "takeaway",
+      "text": "Espacio limitado: mantenlo limpio y enfocado.",
+      "em": [
+        "limpio",
+        "enfocado."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+{
+  "id": "02-contexto",
+  "title": "El contexto",
+  "chip": "02 · CONTEXTO",
+  "scenes": [
+    {
+      "vo": "Idea número dos. El contexto.",
+      "type": "chapter",
+      "n": "02",
+      "title": "El contexto",
+      "icon": "doc",
+      "bg": "blue"
+    },
+    {
+      "vo": "Piensa en un médico nuevo. Antes de revisarte, tienes que contarle todo: tus alergias, tus operaciones, qué medicinas tomas.",
+      "type": "persona",
+      "who": "doctor",
+      "tags": [
+        { "text": "Alergias", "icon": "warn", "cue": "alergias" },
+        { "text": "Operaciones", "icon": "plus", "cue": "operaciones" },
+        { "text": "Medicinas", "icon": "pill", "cue": "medicinas" }
+      ],
+      "bg": "paper"
+    },
+    {
+      "vo": "Si se te olvida algo, el diagnóstico puede salir mal. No porque sea mal médico, sino porque le faltó información.",
+      "type": "persona",
+      "who": "doctor",
+      "mood": "confused",
+      "says": "¿Me falta algo?",
+      "tags": [
+        { "text": "Le faltó información", "icon": "cross", "cue": "faltó" }
+      ],
+      "bg": "red",
+      "tr": "cut"
+    },
+    {
+      "vo": "Con la IA pasa igual. Y eso que le falta se llama contexto.",
+      "type": "say",
+      "text": "Contexto",
+      "em": ["Contexto"],
+      "kicker": "Eso que le falta se llama",
+      "size": "xl",
+      "bg": "ink",
+      "tr": "iris"
+    },
+    {
+      "vo": "El prompt es lo que pides. El contexto es todo lo que rodea a ese pedido: quién eres, qué pasó antes, qué documentos tienes.",
+      "type": "collect",
+      "into": "Tu pedido",
+      "intoIcon": "chat",
+      "items": [
+        { "text": "Quién eres", "icon": "user", "cue": "eres" },
+        { "text": "Qué pasó antes", "icon": "clock", "cue": "pasó" },
+        { "text": "Tus documentos", "icon": "doc", "cue": "documentos" }
+      ],
+      "bg": "paper"
+    },
+    {
+      "vo": "Y aquí va el secreto: la IA no te conoce. Cada conversación empieza de cero.",
+      "type": "nodo",
+      "mood": "blank",
+      "says": "¿Y tú quién eres?",
+      "bg": "blue",
+      "tr": "zoom"
+    },
+    {
+      "vo": "Si no se lo dices… no lo sabe.",
+      "type": "say",
+      "text": "Si no se lo dices, no lo sabe.",
+      "em": ["no lo sabe."],
+      "size": "xl",
+      "bg": "yellow"
+    },
+    {
+      "vo": "Un ejemplo. Le pides: ayúdame a responderle a un cliente enojado. Y te da una respuesta de centro de atención telefónica.",
+      "type": "chat",
+      "user": "Ayúdame a responderle a un cliente enojado",
+      "ai": "Estimado cliente: lamentamos las molestias ocasionadas. Su opinión es muy importante para nosotros.",
+      "verdict": "meh",
+      "cueAi": "respuesta",
+      "bg": "paper"
+    },
+    {
+      "vo": "Ahora pega el correo del cliente y agrega: es cliente desde hace cinco años, el retraso fue culpa del proveedor y le puedo ofrecer envío gratis.",
+      "type": "collect",
+      "into": "Mismo pedido",
+      "intoIcon": "chat",
+      "items": [
+        { "text": "El correo", "icon": "mail", "cue": "correo" },
+        { "text": "Cliente de 5 años", "icon": "star", "cue": "cinco" },
+        { "text": "Culpa del proveedor", "icon": "truck", "cue": "proveedor" },
+        { "text": "Envío gratis", "icon": "gift", "cue": "envío" }
+      ],
+      "bg": "blue",
+      "tr": "rise"
+    },
+    {
+      "vo": "Mismo pedido. Pero ahora la respuesta suena a alguien que conoce el caso.",
+      "type": "chat",
+      "user": "Ayúdame a responderle (+ correo y datos)",
+      "ai": "Hola, Marta: tienes toda la razón. Tras cinco años juntos, mereces más. Tu próximo envío va por nuestra cuenta.",
+      "verdict": "good",
+      "cueAi": "respuesta",
+      "bg": "green"
+    },
+    {
+      "vo": "El prompt dice qué hacer. El contexto dice con qué trabajar.",
+      "type": "versus",
+      "left": { "title": "Prompt", "text": "Qué hacer", "icon": "chat", "tone": "blue", "cue": "prompt" },
+      "right": { "title": "Contexto", "text": "Con qué trabajar", "icon": "doc", "tone": "yellow", "cue": "contexto" },
+      "bg": "paper"
+    },
+    {
+      "vo": "Eso sí: ojo con los datos delicados. Antes de pegar información de clientes, revisa qué permite tu empresa.",
+      "type": "stamp",
+      "title": "Datos de clientes",
+      "lines": ["Nombre: ████████", "Tarjeta: ████ ████", "Dirección: ██████"],
+      "stamp": "¡OJO!",
+      "tone": "red",
+      "icon": "lock",
+      "cue": "ojo",
+      "bg": "ink",
+      "tr": "whip"
+    },
+    {
+      "vo": "Quédate con esto: buen contexto, buena respuesta.",
+      "type": "takeaway",
+      "text": "Buen contexto, buena respuesta.",
+      "em": ["buena respuesta."]
+    }
+  ]
+}

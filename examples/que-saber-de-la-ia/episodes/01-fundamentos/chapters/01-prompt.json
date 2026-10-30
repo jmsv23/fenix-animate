@@ -1,0 +1,156 @@
+{
+  "id": "01-prompt",
+  "title": "El prompt",
+  "chip": "01 · PROMPT",
+  "scenes": [
+    {
+      "vo": "Idea número uno. El prompt.",
+      "type": "chapter",
+      "n": "01",
+      "title": "El prompt",
+      "icon": "chat",
+      "bg": "red"
+    },
+    {
+      "vo": "Prompt es una palabra en inglés que significa instrucción. Es lo que escribes en la cajita del chat.",
+      "type": "chat",
+      "user": "Lo que escribes aquí…",
+      "label": "PROMPT",
+      "cueLabel": "cajita",
+      "bg": "paper"
+    },
+    {
+      "vo": "Imagina que contratas a un practicante nuevo. Es rapidísimo, súper educado y ha leído casi todo lo que existe.",
+      "type": "persona",
+      "who": "intern",
+      "tags": [
+        {
+          "text": "Rapidísimo",
+          "icon": "bolt",
+          "cue": "rapidísimo"
+        },
+        {
+          "text": "Súper educado",
+          "icon": "star",
+          "cue": "educado"
+        },
+        {
+          "text": "Leyó casi todo",
+          "icon": "book",
+          "cue": "leído"
+        }
+      ],
+      "bg": "blue"
+    },
+    {
+      "vo": "Pero hay un problema: no te conoce. No sabe quién es tu jefa, ni qué proyecto llevas.",
+      "type": "persona",
+      "who": "intern",
+      "mood": "confused",
+      "says": "Mmm… ¿y tú quién eres?",
+      "tags": [
+        {
+          "text": "¿Tu jefa?",
+          "icon": "question",
+          "cue": "jefa"
+        },
+        {
+          "text": "¿Tu proyecto?",
+          "icon": "question",
+          "cue": "proyecto"
+        }
+      ],
+      "bg": "paper",
+      "tr": "cut"
+    },
+    {
+      "vo": "Si le dices: hazme un reporte… te entrega algo genérico. Correcto, pero genérico.",
+      "type": "chat",
+      "user": "Hazme un reporte",
+      "ai": "Aquí tienes un reporte general con información general.",
+      "verdict": "meh",
+      "cueAi": "entrega",
+      "bg": "paper"
+    },
+    {
+      "vo": "Ahora dile: hazme un resumen de una página, de las ventas del mes, para mi jefa, en tono formal. ¡Pum! Otro resultado.",
+      "type": "chat",
+      "user": "Hazme un resumen de 1 página de las ventas del mes, para mi jefa, en tono formal",
+      "ai": "Estimada Laura: en octubre las ventas crecieron 12 %. Tres puntos clave…",
+      "verdict": "good",
+      "cueAi": "pum",
+      "bg": "green",
+      "tr": "zoom"
+    },
+    {
+      "vo": "El practicante es el mismo. Lo que cambió fue tu pedido.",
+      "type": "say",
+      "text": "Lo que cambió fue tu pedido",
+      "em": [
+        "tu pedido"
+      ],
+      "kicker": "Mismo practicante",
+      "bg": "ink"
+    },
+    {
+      "vo": "Un buen prompt responde cuatro preguntas: qué quieres, para quién es, qué tono buscas y en qué formato.",
+      "type": "steps",
+      "title": "Un buen prompt dice…",
+      "items": [
+        {
+          "text": "Qué quieres",
+          "icon": "target",
+          "cue": "quieres"
+        },
+        {
+          "text": "Para quién",
+          "icon": "user",
+          "cue": "quién"
+        },
+        {
+          "text": "Qué tono",
+          "icon": "mic",
+          "cue": "tono"
+        },
+        {
+          "text": "Qué formato",
+          "icon": "list",
+          "cue": "formato"
+        }
+      ],
+      "bg": "paper"
+    },
+    {
+      "vo": "Y si la primera respuesta no te convence, no te rindas. Corrígela: más corto, menos formal. Es una conversación, no un examen.",
+      "type": "loop",
+      "steps": [
+        {
+          "text": "Pides",
+          "icon": "chat",
+          "cue": "primera"
+        },
+        {
+          "text": "Responde",
+          "icon": "robot",
+          "cue": "convence"
+        },
+        {
+          "text": "Corriges",
+          "icon": "pencil",
+          "cue": "corrígela"
+        }
+      ],
+      "center": "Conversación",
+      "bg": "yellow",
+      "tr": "iris"
+    },
+    {
+      "vo": "Quédate con esto: la IA no lee tu mente. Lee tu prompt.",
+      "type": "takeaway",
+      "text": "La IA no lee tu mente. Lee tu prompt.",
+      "em": [
+        "tu prompt."
+      ]
+    }
+  ]
+}

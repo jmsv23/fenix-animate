@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "project.json (framework v2)",
+  "type": "object",
+  "required": ["schemaVersion", "projectId", "style", "activeEpisode", "voice"],
+  "properties": {
+    "schemaVersion": { "const": "2.0" },
+    "projectId": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "series": { "type": "string", "description": "Marca de la serie, arriba a la derecha" },
+    "language": { "type": "string", "default": "es" },
+    "canvas": {
+      "type": "object",
+      "properties": { "width": { "type": "integer" }, "height": { "type": "integer" }, "fps": { "type": "integer" } }
+    },
+    "style": { "type": "string", "description": "id de styles/<id>/style.js (proyecto o framework)" },
+    "activeEpisode": { "type": "string", "description": "carpeta del episodio que se compila" },
+    "hyperframes": { "type": "string", "description": "versión fija del CLI de HyperFrames" },
+    "voice": {
+      "type": "object",
+      "required": ["provider"],
+      "properties": {
+        "provider": { "enum": ["voicebox", "command", "existing"] },
+        "url": { "type": "string" },
+        "profile": { "type": "string", "description": "voicebox: nombre o id del perfil" },
+        "instruct": { "type": "string", "description": "voicebox (motores qwen): dirección de voz" },
+        "normalize": { "type": "boolean" },
+        "maxChunkChars": { "type": "integer" },
+        "crossfadeMs": { "type": "integer" },
+        "speed": { "type": "number", "description": "atempo de ffmpeg sobre el resultado" },
+        "command": { "type": "string", "description": "command: plantilla con {text} {textFile} {out}" },
+        "files": { "type": "object", "additionalProperties": { "type": "string" }, "description": "existing: capítulo → ruta de audio" }
+      }
+    },
+    "align": {
+      "type": "object",
+      "properties": { "model": { "type": "string" }, "device": { "type": "string" }, "computeType": { "type": "string" }, "bin": { "type": "string" } }
+    }
+  }
+}

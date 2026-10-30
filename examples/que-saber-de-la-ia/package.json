@@ -1,0 +1,11 @@
+{
+  "name": "que-saber-de-la-ia",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "fw": "node ../../src/cli.mjs",
+    "dev": "npx --yes hyperframes@0.8.221 preview",
+    "check": "npx --yes hyperframes@0.8.221 check",
+    "render": "node ../../src/cli.mjs render"
+  }
+}
